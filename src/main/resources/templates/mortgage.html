@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Mortgage Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/mortgage}" th:object="${mortgage}" method="post">
+    <p>Year: <input type="text" th:field="*{year}" /></p>
+    <p>Principle: <input type="text" th:field="*{principle}" /></p>
+    <p>APR: <input type="text" th:field="*{apr}" /></p>
+
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+<h1>Result</h1>
+<p th:text="'Year: ' + ${mortgage.year}" />
+<p th:text="'Principle: ' + ${mortgage.principle}" />
+<p th:text="'APR: ' + ${mortgage.apr}" />
+
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+
+<h2>A basic HTML table</h2>
+
+<table>
+    <tr>
+        <th>Principal</th>
+        <th>Years</th>
+        <th>APR</th>
+<!--        <th>Country</th>-->
+    </tr>
+    <tr>
+        <td>${mortgage.principle}</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+    </tr>
+</table>
+
+<a href="/mortgage">Submit another message</a>
+</body>
+</html>
